@@ -1,0 +1,1115 @@
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+*,*::before,*::after{
+    box-sizing:border-box;
+}
+
+.warp{
+    overflow: hidden;
+    background-image:url(https://img.51miz.com/Element/00/64/91/45/05067f5c_E649145_ad4ae01h.jpg);
+    background-position: bottom center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:lavenderblush;
+    flex-direction:column;/*建議新增*/
+}
+
+.header h2 a{
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+}
+
+.header h2 a:hover{
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 20px;
+    color: red;
+}
+
+.me {
+    display: flex;
+    align-items: center;
+    flex-direction:column;/*建議新增*/
+}
+
+
+.me > li {
+    text-align: center;
+    display:block;
+    font-size: 15px;
+    font-weight: bold;
+    color: darkgray;
+    padding: 15px;
+}
+
+.me li .dropdown {
+    color: black;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.me li .dropdown:hover {
+    color: red;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+
+.me > li li  {
+    margin: 10px 0;
+}
+
+.me ul {
+    display: none;
+}
+
+.header {
+    z-index: 100%;
+    position: fixed;
+    top: 0;
+    height: calc(100vh-header);
+    bottom: 0;
+    width: 200px;
+    height: 100%;
+    background:lavenderblush;
+    overflow: hidden;
+    transform: translateX(-200px);
+    transition: all 0.8s;
+}
+
+.open .header {
+  transform: translateX(0px);
+  transition: all 0.5s;
+  z-index:9;
+}
+
+.open .BBC {
+  transform: translateX(200px);
+  transition: all 0.5s;
+}
+
+
+.leaguer a{
+    font-size: 30px;
+    padding: 5px;
+    color: black;
+}
+
+.BBC-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: lavenderblush;
+}
+
+.BBC-icon h2{
+    display:none;
+}
+
+.BBC-icon h3 a{
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+}
+
+.BBC-icon h3 a:hover{
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 20px;
+    color: red;
+}
+
+.what {
+    display: flex;
+    align-items: center;
+}
+
+
+.what > li {
+    text-align: center;
+    display:block;
+    font-size: 15px;
+    font-weight: bold;
+    color: darkgray;
+    padding: 15px;
+}
+
+.what li .AIT {
+    color: black;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.what li .AIT:hover {
+    color: red;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+
+.what > li li  {
+    margin: 10px 0;
+}
+
+.what ul {
+    display: none;
+}
+
+.ABC a{
+    font-size: 30px;
+    padding: 5px;
+    color: black;
+}
+
+.content {
+    display: flex;
+    padding-left: 120px;
+    margin: 20px;
+}
+
+.kkc {
+    display: flex;
+    flex-direction: column;
+}
+
+.QQ h2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    max-width: 330px;
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+}
+
+.BTS {
+    display: flex;
+    flex-direction: row;
+}
+
+.BTS img {
+    max-width: 200px;
+    margin-left: 150px;
+}
+
+.BTS h2 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 90px;
+    padding-left: 20px;
+}
+
+.BTS p {
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+.IS {
+    display: flex;
+    flex-direction: row;
+}
+
+.IS img {
+    max-width: 200px;
+    margin-left: 150px;
+}
+
+.IS h2 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 90px;
+    padding-left: 20px;
+}
+
+.IS p {
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+.NET h2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    max-width: 330px;
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+}
+
+.NET h2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    max-width: 330px;
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+}
+
+.TPE {
+    display: flex;
+    justify-content: center;
+}
+
+.TPE h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 120px;
+    margin-left: 150px;
+}
+
+.TPE p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.OMG {
+    display: flex;
+    justify-content: center;
+}
+
+.OMG h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 120px;
+    margin-left: 150px;
+    padding: 10px;
+}
+
+.OMG p {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.NET hr {
+    margin-left: 150px;
+}
+
+
+.GKG {
+    display: flex;
+    flex-direction: column;
+}
+
+.MMA {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.CP3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: lavender;
+    margin: 20px;
+    padding: 30px;
+}
+
+.list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding:20px;
+}
+.list li{
+    font-family: 'Noto Sans TC', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 111px;
+    height: 110px;
+    /*background-color: crimson;*/
+    background-image: linear-gradient(6deg,#00ced1,#ff0000);
+    border-radius: 50%;
+    position: relative;
+    font-size: 15px;
+    color: white;
+    box-shadow: 0px 0px 0px 4px white;
+}
+.list .bi {
+    font-family: 50px;
+    margin-bottom: 5px;
+}
+.list li + li {
+    margin-left: 110px;
+}
+
+.list li + li::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background-color: crimson;
+    z-index: -1;
+    box-shadow: 0px 0px 0px 5px crimson;
+    top: 0;
+    bottom: 0;
+    left: -100px;
+    margin: auto;
+}
+
+.list li.KBG ~ li {
+    background-image: linear-gradient(9deg,#c0c0c0,#ccc);
+}
+.list li.KBG ~ li::before {
+    background-color: #c0c0c0;
+    box-shadow: 0px 0px 0px 5px #c0c0c0;
+}
+
+.list li.active ~ li {
+    background-image: linear-gradient(9deg,#c0c0c0,#ccc);
+}
+.list li.active ~ li::before {
+    background-color: #c0c0c0;
+    box-shadow: 0px 0px 0px 5px #c0c0c0;
+}
+
+.CP3 h2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+
+}
+
+.name {
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.pig {
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.CTP {
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.AKA {
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.KYG {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ipohe {
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.HTC {
+    text-align: center;
+    width: 420px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.CPE {
+    text-align: center;
+    width: 190px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.home {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.RC {
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.LOL {
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.KFC {
+    text-align: center;
+    width: 190px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.MRT {
+    text-align: center;
+    width: 420px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.UFO {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.email {
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.e-ail {
+    text-align: center;
+    width: 420px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.CBK h2 a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: red;
+    max-width: 652px;
+    margin-left: 20px;
+    padding: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background: lavenderblush;
+}   
+
+.NET hr {
+    max-width: 320px;
+    border: 2px solid black;
+}
+
+.XXX {
+    display: flex;
+    padding:90px;
+}
+
+.XXX > li {
+    margin:20px;
+}
+
+.XXX h2 {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.XXX ul li {
+    padding: 5px;
+}
+
+.ig {
+    padding-top: 93px;
+}
+
+.ig a{
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
+
+.ig p {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+}
+.eag img{
+    position: fixed;
+    bottom: 0;
+    right: 0;    
+    max-width: 50px;
+    margin: 20px;
+    padding: 10px;
+}
+
+@media (max-width:768px) {
+    .BBC-icon h3 a{
+        font-size: 20px;
+    }
+    
+    .BBC-icon h3 a:hover{
+        font-size: 20px;
+    }
+    
+    .what .AIT {
+        font-size: 20px;
+    } 
+    
+    .ABC a {
+        font-size: 20px;
+    }
+
+    .content {
+        display: flex;
+        padding:0;
+        margin: 20px;
+    }
+    
+    .kkc {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .QQ h2 {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 20px;
+        background: white;
+        text-align: center;
+        max-width: 230px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .BTS img {
+        max-width: 120px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .BTS h2 {
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 50px;
+        padding-left: 20px;
+    }
+    
+    .BTS p {
+        font-size: 15px;
+        font-weight: bold;
+        padding-top: 10px;
+        padding-left: 40px;
+    }
+    
+    
+    .IS img {
+        max-width: 120px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .IS h2 {
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 40px;
+        padding-left: 20px;
+    }
+    
+    .IS p {
+        font-size: 15px;
+        font-weight: bold;
+        padding-top: 10px;
+        padding-left: 50px;
+    }
+    
+    .NET h2 {
+        font-size: 30px;
+        font-weight: bold;
+        padding: 20px;
+        background: white;
+        text-align: center;
+        max-width: 230px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .TPE h3 {
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-right: 70px;
+        margin-left: 32px;
+    }
+    
+    .TPE p {
+        font-size: 15px;
+        font-weight: bold;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+
+    .OMG h3 {
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-right: 70px;
+        margin-left: 40px;
+        padding: 10px;
+    }
+    
+    .OMG p {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px;
+        margin-top: 20px;
+        margin-right: 30px;
+        margin-bottom: 5px;
+    }
+    
+    .NET hr {
+        max-width: 230px;
+        margin-left: 20px;
+    }
+    
+    .GKG {
+        display: flex;
+        flex-direction: column;
+        max-width: 450px;
+    }
+    
+    .MMA {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    
+    .CP3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: lavender;
+        margin: 20px;
+        padding: 30px;
+    }
+    
+    .list{
+        width: 570px;
+        display: flex;
+        justify-content: center;
+        padding-right:220px;
+    }
+    .list li{
+        font-family: 'Noto Sans TC', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 111px;
+        height: 110px;
+        /*background-color: crimson;*/
+        background-image: linear-gradient(6deg,#00ced1,#ff0000);
+        border-radius: 50%;
+        position: relative;
+        font-size: 15px;
+        color: white;
+        box-shadow: 0px 0px 0px 4px white;
+    }
+
+    .list .bi {
+        font-family: 40px;
+        margin-bottom: 5px;
+    }
+
+    .list li + li {
+        margin-left: 30px;
+    }
+    
+    .list li + li::before {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 5px;
+        background-color: crimson;
+        z-index: -1;
+        box-shadow: 0px 0px 0px 5px crimson;
+        top: 0;
+        bottom: 0;
+        left: -100px;
+        margin: auto;
+    }
+    
+    .CP3 h2 {
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+        padding: 20px;
+    
+    }
+    
+    .name {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .pig {
+        text-align: center;
+        width: 170px;
+        margin: 10px;
+    }
+    
+    .CTP {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .AKA {
+        text-align: center;
+        width: 170px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .ipohe {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .HTC {
+        text-align: center;
+        width: 360px;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .CPE {
+        text-align: center;
+        width: 190px;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .home {
+        display:flex;
+        flex-direction: column;
+    }
+    
+    .RC {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .LOL {
+        text-align: center;
+        width: 150px;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .KFC {
+        text-align: center;
+        width: 150px;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .MRT {
+        text-align: center;
+        width: 320px;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    
+    .email {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .e-ail {
+        text-align: center;
+        width: 320px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .CBK h2 a{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        background: red;
+        max-width: 410px;
+        margin-left: 20px;
+        padding: 30px;
+    }
+
+    .XXX {
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .XXX h2 {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    
+    .XXX ul {
+        font-weight: bolder;
+        font-size: 10px;
+    }
+    
+    .ig{
+        padding: 40px;
+    }
+    
+    .ig h2{
+        font-size: 25px;
+    }
+    
+    .ig p {
+        padding: 0;
+        font-size:15px;
+    }  
+
+    .eag a img {
+        margin: 0;
+        max-width: 30px;
+    }
+}
+
+@media (max-width:500px) {
+
+    .header h2 {
+        padding:10px;
+    }
+
+    .header h2 a{
+        font-size: 25px;
+    }
+
+    .header h2 a:hover{
+        font-size: 25px;
+    }
+
+    .BBC-icon h2{
+        display:block;
+        cursor: pointer;
+    }
+
+    .me {
+        padding-bottom: 250px;
+    }
+
+    .BBC-icon h3{
+        display:none;
+    }
+
+    .mobile-link {
+        color:block;
+        font-size:50px;
+    }
+
+    .leaguer {
+        display: none;
+    }
+
+    .what {
+        display: none;
+    }
+
+   .content {
+    display: flex;
+    flex-direction: column;
+    }
+
+    
+    .kkc {
+        padding-left: 90px;
+    }
+
+    .TPE h3 {
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 30px;
+    }
+
+    .TPE p {
+        padding-right: 70px;
+    }
+
+    .OMG h3 {
+        font-size: 15px;
+        padding-right: 10px;
+
+    }
+
+    .OMG p {
+        padding-top: 10px;
+        padding-right: 70px;
+    }
+
+    .LOL {
+        max-width: 140px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .XXX {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .XXX > li {
+        margin: 0;
+    }
+
+    .XXX li h2 {
+        font-size: 20px;
+        border: 2px solid black;
+    }
+
+    .XXX li h2:hover {
+        cursor: pointer;
+        font-size: 20px;
+        color: white;
+        background: red;
+        border: 2px solid black;
+    }
+
+    .XXX > li li {
+        margin: 5px 0;
+    }
+
+    .XXX ul {
+        display:none;
+    }
+
+    .XXX ul li {
+        padding: 10px;
+    }
+
+    .ig p{
+        font-size: 40px;
+        padding-left: 5px;
+    }
+
+    .go {
+        font-size: 50px;
+        margin-top: 20px;
+        margin-left: 150px;
+    }
+
+    .eag a img {
+        max-width: 50px;
+    }
+}
