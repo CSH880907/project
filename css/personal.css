@@ -1,0 +1,684 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.warp{
+    overflow: hidden;
+    background-image: url(https://s3-wt-blog.worktile.com/wt-wordpress/kb/wp-content/uploads/2024/04/25064929/527a4a49-010e-435a-a441-423a0993e587.webp);    
+    background-position: bottom center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 10px solid tomato;
+    background: black;
+}
+
+.header h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 30px;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+}
+
+.header  li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+}
+
+.header  li a:hover{
+    border-bottom: 5px solid red;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+}
+
+
+.item{
+    width: 1520px;
+    background:lightgray;
+    position: absolute;
+    padding-left: 50px;
+    box-shadow: 0 0 10px black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.item img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+.item h2{
+    padding-left: 75px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.item p{
+    padding-left: 40px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.item2 {
+    display: flex;
+    position: absolute;
+    top: 170px;
+    right: 900px;
+}
+
+.item2 .no1{
+    display: flex;
+    justify-content: center;
+    padding-right: 60px;
+    padding-bottom: 20px;
+}
+
+.item2 .no2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.item2 .no3{
+    display: flex;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+.item2 h2 {
+    padding-left:20px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cat {
+    padding-top: 50px;
+    margin-left: 1090px;
+    position: absolute;
+}
+
+.bmw {
+    margin-top: 280px;
+}
+
+
+.bmw h2 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.sbj {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-left: 540px;
+    padding: 30px;
+    box-shadow: 0 0 15px black;
+    border-radius: 10px;
+    background: white;
+}
+
+.sbj h2{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.sbj p {
+    padding: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.MLB {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-left: 540px;
+    margin-top: 30px;
+    padding: 30px;
+    box-shadow: 0 0 15px black;
+    border-radius: 10px;
+    background: white;
+}
+
+.MLB h2{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.MLB p {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    font-size: 10px;
+}
+
+.item3 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 30px;
+    color: white;
+}
+
+.item4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.bog1 {
+    background: white;
+    border-bottom: 10px solid burlywood;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+    margin: 20px;
+}
+
+.bog1 img {
+    padding: 10px;
+    max-width:200px;
+}
+
+.bog1 h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: burlywood;
+}
+
+.bog2 {
+    background: white;
+    max-width: 200px;
+    border-bottom: 10px solid green;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+    margin-right: 30px;
+    
+}
+
+.bog2 img {
+    padding: 10px;
+    max-width: 200px;
+}
+
+.bog2 h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: burlywood;
+}
+
+.bog3 {
+    background: white;
+    border-bottom: 10px solid Purple;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+    max-width: 200px;
+}
+
+.bog3 img {
+    padding: 10px;
+    max-width: 180px;
+}
+
+.bog3 h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: burlywood;
+    padding-bottom: 20px;
+}
+
+.me h2 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.CBA {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.CBA img {
+    border-radius: 10px;
+    border: 1px solid white;
+    max-width: 300px;
+}
+
+.MAM {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5px;
+    padding-left: 30px;
+}
+
+.MAM h2 {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.MAM p {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.footer img{
+    width: 1520px;
+    position: absolute;
+}
+
+.footer p {
+    background: lightgray;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 35px;
+}
+
+@media (max-width:768px) {
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        max-width: 750px;
+        padding: 10px;
+    }
+
+
+    .item img {
+        padding: 10px;
+    }
+
+    .item h2 {
+        margin-left: 5px;
+        font-size: 15px;
+    }
+
+    .item p {
+        margin-left: 15px;
+        font-size: 15px;
+    }
+
+    .item2{
+        right: 300px;
+    }
+
+    .no1 h2{
+        font-size: 10px;
+    }
+
+    .no2 {
+        margin-right: 30px;
+    }
+
+    .no2 h2{
+        font-size: 10px;
+    }
+
+    .no3 {
+        margin-right: 50px;
+    }
+
+    .no3 h2 {
+        font-size: 10px;
+    }
+
+    .cat {
+        max-width: 100px;
+        margin: 0;
+        left: 420px;
+    }
+
+    .bmw {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bmw h2 {
+        font-size: 30px;
+    }
+
+    .yes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 750px;
+    }
+
+    .sbj {
+        margin: 10px;
+    }
+
+    .sbj h2 {
+        font-size: 20px;
+    }
+
+    .MLB {
+        margin: 10px;
+    }
+
+    .MLB h2 {
+        font-size: 20px;
+    }
+
+    .item3 h2{
+        font-size: 30px;
+    }
+    
+    .bog1 {
+        max-width: 200px;
+    }
+
+    .bog1 img {
+        max-width: 150px;
+        padding: 10px;
+    }
+
+    .bog2 {
+        max-width: 200px;
+    }
+
+    .bog2 img {
+        max-width: 150px;
+        padding: 10px;
+    }
+
+    .bog3 {
+        max-width: 200px;
+    }
+
+    .bog3 img {
+        max-width: 130px;
+        padding: 10px;
+    }
+
+    .me h2 {
+        font-size: 20px;
+    }
+
+    .CBA img {
+        max-width: 200px;
+    }
+
+    .MAM h2 {
+        font-size: 15px;
+    }
+
+    .MAM p {
+        padding-top: 10px;
+        font-size: 15px;
+    }
+
+    .MAM br {
+        display:none;
+    }
+    
+    .footer p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:500px) {
+    
+    .item {
+        max-width: 483px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .item img {
+        margin-left: 140px;
+        padding: 30px;
+    }
+
+    .item h2 {
+        display: none;
+    }
+
+    .item p {
+        display: none;
+    }
+
+    .item2 {
+        display: none;
+    }
+
+    .cat {
+        display: none;
+    }
+
+    .bmw {
+        margin-top: 230px;
+    }
+
+    .bmw h2 {
+        font-size: 20px;
+    }
+
+    .sbj h2{
+        font-size: 10px;
+    }
+
+    .sbj p {
+        font-size: 9px;
+    }
+
+    .MLB h2{
+        font-size: 10px;
+    }
+
+    .MLB p {
+        font-size: 9px;
+    }
+
+    .bog1 {
+        max-width: 100px;
+    }
+
+    .bog1 img {
+        max-width: 100px;
+    }
+
+    
+    .bog2 {
+        max-width: 100px;
+    }
+
+    .bog2 img {
+        max-width: 100px;
+    }
+
+    
+    .bog1 {
+        max-width: 100px;
+    }
+
+    .bog3 img {
+        max-width: 80px;
+    }
+
+    .CBA img {
+        max-width: 150px;
+    }
+
+    .MAM h2 {
+        font-size: 10px;
+    }
+
+    .MAM p{
+        font-size: 10px;
+    }
+}
+
+
+
