@@ -2,22 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/personal.css">
-    <link rel="stylesheet" href="css/https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <script src="js/personal.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="css/視差滾動.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/視差滾動.js"></script>
     <title>Document</title>
 </head>
+<body>
+    
 <body>
     <div class="warp">
         <div class="header">
             <h2>個人履歷</h2>
             <ul>
-                <li><a href="#bmw">工作經歷</a></li>
-                <li><a href="#rgb">自我技能</a></li>
-                <li><a href="#">自我介紹</a></li>
+                <li><a href="#bmw" class="scrollTop">工作經歷</a></li>
+                <li><a href="#rgb" class="scrollTop">自我技能</a></li>
+                <li><a href="#KTV" class="scrollTop">自我介紹</a></li>
             </ul>
         </div>
+      
         <div class="PPT">
             <div class="item">
                 <img src="img/19.jpg" alt="開發者本人">
@@ -40,9 +44,6 @@
                     </li>
                 </ul>
             </div>
-            <div class="cat">
-                <video src="img/台中市.mp4" controls width="300"></video>
-            </div>
         </div>
 
         <div id="bmw" class="bmw">
@@ -63,22 +64,40 @@
             <div class="item3">
                 <h2>自我技能</h2>
             </div>
-            <div class="item4">
+            <div id="HBL" class="item4">
                 <div class="bog1">
-                    <img src="img/HTML.jpeg" alt="HTML">
-                    <h2>HTML</h2>
+                    <div class="m-b-1">
+                        <span><img src="img/HTML.png" alt="HTML"></span>
+                        <div class="progress">
+                          <div class="progress-bar" data-progress="90">
+                            90%
+                          </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="bog2">
-                    <img src="img/CSS.png" alt="css">
-                    <h2>css</h2>
+                    <div class="m-b-1">
+                        <SPan><img src="img/CSS.png" alt="css"></SPan>
+                        <div class="progress">
+                          <div class="progress-bar" data-progress="90">
+                             90%
+                          </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="bog3">
-                    <img src="img/jquery.png" alt="jQuery">
-                    <h2>jquery</h2>
+                    <div class="m-b-1">
+                        <SPan><img src="img/JS.png" alt="js"></SPan>
+                        <div class="progress">
+                          <div class="progress-next" data-progress="50">
+                             50%
+                          </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="KTV">
+        <div  id="KTV" class="KTV">
             <div class="me">
                 <h2>自我介紹</h2>
             </div>
@@ -87,8 +106,6 @@
                 <div class="MAM">
                     <h2>高中:台南市長榮高級中學</h2>
                     <h2>大學:台中市嶺東科技大學(夜間就讀中)</h2>
-                    <br>
-                    <br>
                     <p>
                        在學習網頁設計僅僅花了快3年,學了很久也花很多時間<br>
                        利用下班之餘或是放假時間來學習線上課程的網頁設計<br>
@@ -104,5 +121,7 @@
     <div class="footer">
         <p>© 2024 黃清熙. ALL RIGHTS RESERVED</p>
     </div>
+</body>
+
 </body>
 </html>
