@@ -3,140 +3,57 @@
    License: none (public domain)
 */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
 body {
-    line-height: 1;
+	line-height: 1;
 }
-
-ol,
-ul {
-    list-style: none;
+ol, ul {
+	list-style: none;
 }
-
-blockquote,
-q {
-    quotes: none;
+blockquote, q {
+	quotes: none;
 }
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+img {
+    max-width: 100%;
+    height: auto;
 }
+*,*::before,*::after{
+    box-sizing:border-box;
+}
+
 .warp{
     overflow: hidden;
     background-image: url(https://s3-wt-blog.worktile.com/wt-wordpress/kb/wp-content/uploads/2024/04/25064929/527a4a49-010e-435a-a441-423a0993e587.webp);    
@@ -156,7 +73,7 @@ table {
     font-size: 20px;
     font-weight: bold;
     color: white;
-    padding: 30px;
+    padding: 10px;
 }
 
 .header ul {
@@ -183,13 +100,14 @@ table {
 
 
 .item{
-    width: 1520px;
+    width: 1518px;
     background:lightgray;
     position: absolute;
-    padding-left: 50px;
+    padding-left: 550px;
     box-shadow: 0 0 10px black;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+	margin-top: 1px;
 }
 
 .item img{
@@ -212,8 +130,8 @@ table {
 .item2 {
     display: flex;
     position: absolute;
-    top: 170px;
-    right: 900px;
+    top: 130px;
+    right: 400px;
 }
 
 .item2 .no1{
@@ -249,7 +167,7 @@ table {
 }
 
 .bmw {
-    margin-top: 280px;
+    margin-top: 360px;
 }
 
 
@@ -265,7 +183,7 @@ table {
     display: flex;
     flex-direction: column;
     max-width: 500px;
-    margin-left: 540px;
+    margin-left: 480px;
     padding: 30px;
     box-shadow: 0 0 15px black;
     border-radius: 10px;
@@ -291,7 +209,7 @@ table {
     display: flex;
     flex-direction: column;
     max-width: 500px;
-    margin-left: 540px;
+    margin-left: 480px;
     margin-top: 30px;
     padding: 30px;
     box-shadow: 0 0 15px black;
@@ -317,8 +235,8 @@ table {
     display: flex;
     justify-content: center;
     font-weight: bold;
-    font-size: 50px;
-    padding-top: 30px;
+    font-size: 30px;
+    padding-top: 10px;
     color: white;
 }
 
@@ -327,6 +245,7 @@ table {
     justify-content: center;
     align-items: center;
     padding: 10px;
+	padding-right: 70px;
 }
 
 .bog1 {
@@ -335,10 +254,11 @@ table {
     border-radius: 10px;
     box-shadow: 0px 0px 15px black;
     margin: 20px;
+	padding: 10px;
 }
 
 .bog1 img {
-    padding: 10px;
+    padding-left: 20px;
     max-width:200px;
 }
 
@@ -351,23 +271,22 @@ table {
 
 .bog2 {
     background: white;
-    max-width: 200px;
     border-bottom: 10px solid green;
     border-radius: 10px;
     box-shadow: 0px 0px 15px black;
     margin-right: 30px;
-    
+	padding: 10px;
 }
 
 .bog2 img {
-    padding: 10px;
+    padding-left: 20px;
     max-width: 200px;
 }
 
 .bog2 h2 {
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size:20px;
     color: burlywood;
 }
 
@@ -376,12 +295,12 @@ table {
     border-bottom: 10px solid Purple;
     border-radius: 10px;
     box-shadow: 0px 0px 15px black;
-    max-width: 200px;
+	padding: 10px;
 }
 
 .bog3 img {
-    padding: 10px;
-    max-width: 180px;
+    padding-left: 20px;
+    max-width: 200px;
 }
 
 .bog3 h2 {
@@ -392,17 +311,52 @@ table {
     padding-bottom: 20px;
 }
 
+.progress {
+    height:20px;
+    width: 210px;
+    border-radius: 10px;
+    border: 1px solid red;
+    background:white;   
+}
+
+.progress-bar {
+    height: 18px;
+    width: 180px;
+    text-align: center;
+    background: repeating-linear-gradient(50deg,#FFA07A 0px,#FFA07A 25px);
+    /*background-repeat: no-repeat;
+    background-position: 0px;*/
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 50px;
+    color:black;
+}
+
+.progress-next {
+    height: 18px;
+    width: 120px;
+    text-align: center;
+    background: repeating-linear-gradient(50deg,#FFA07A 0px,#FFA07A 25px);
+    /*background-repeat: no-repeat;
+    background-position: 0px;*/
+    border-radius: 10px;
+    text-align: center;
+    padding-left: 100px;
+    color: black;
+}
+
 .me h2 {
     font-size: 50px;
     font-weight: bold;
     text-align: center;
     color: white;
+	padding-right: 30px;
 }
 
 .CBA {
     display: flex;
     justify-content: center;
-    padding: 30px;
+	padding: 30px;
 }
 
 .CBA img {
@@ -431,18 +385,17 @@ table {
     font-size: 20px;
 }
 
-.footer img{
-    width: 1520px;
-    position: absolute;
+.footer{
+	border-top: 10px solid tomato;
+	background: black;
+	padding:20px;
 }
 
 .footer p {
-    background: lightgray;
-    position: relative;
-    text-align: center;
-    font-weight: bold;
-    font-size: 30px;
-    padding: 35px;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bolder;
 }
 
 @media (max-width:768px) {
@@ -591,13 +544,13 @@ table {
 @media (max-width:500px) {
     
     .item {
-        max-width: 483px;
+        max-width: 375px;
         margin: 0;
         padding: 0;
     }
 
     .item img {
-        margin-left: 140px;
+        margin-left: 90px;
         padding: 30px;
     }
 
@@ -626,19 +579,19 @@ table {
     }
 
     .sbj h2{
-        font-size: 10px;
+        font-size: 7px;
     }
 
     .sbj p {
-        font-size: 9px;
+        font-size: 5px;
     }
 
     .MLB h2{
-        font-size: 10px;
+        font-size: 7px;
     }
 
     .MLB p {
-        font-size: 9px;
+        font-size: 5px;
     }
 
     .bog1 {
