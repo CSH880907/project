@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">快樂購物網</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">零食</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                服裝
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">男生</a></li>
+              <li><a class="dropdown-item" href="#">女生</a></li>
+              <li><a class="dropdown-item" href="#">童裝</a></li>
+            </ul>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">電器</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+            <input class="form-control me-2 text-center" type="search" placeholder="搜尋" aria-label="Search">
+            <button class="btn btn-outline-success"  type="submit"><i class="bi bi-search"></i></button>
+        </form>
+    </div>
+  </nav>
+
+  <div id="carouselExampleControls" class="carousel  slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/8.png" class="d-block m-auto " style="width: 1200px; height: 600px; padding: 20px;" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="img/9.png" class="d-block m-auto"  style="width: 1200px; height: 600px; padding: 20px;" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="img/10.png" class="d-block m-auto" style="width: 1200px; height: 600px; padding: 20px;" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container my-5 x-2">
+    <h2 class="text-center text-danger fw-bolder p-4">精選商品</h2>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="img/4.jpeg" class="card-img-top m-auto" style="width: 423px;" alt=">70mai 儲能行動電源">
+            <div class="card-body">
+              <h5 class="card-title text-center">70mai 儲能行動電源</h5>
+              <p class="card-text text-center">同級最強電量，解決你所有的充電困擾</p>
+              <p class="card-text text-center text-danger" style="font-size: 20px;">$1100</p>
+              <button type="button" class="btn btn-danger p-2" style="margin-left: 160px; font-size: 20px;"><i class="bi bi-cart-plus"></i>加入購物車</button>
+              <button type="button" class="btn btn-danger p-2" style="font-size: 20px;"><i class="bi bi-suit-heart-fill"></i>加入收藏</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/5.jpg" class="card-img-top m-auto"style="width: 423px;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">GIORDANO 男裝E care輕暖系列立領背心</h5>
+              <p class="card-text text-center">輕鬆易打理免燙不易皺，休閒舒適秋冬必備保暖單品，高品質纖維填充舒適保暖</p>
+              <p class="card-text text-center text-danger" style="font-size: 20px;">$750</p>
+              <button type="button" class="btn btn-danger p-2" style="margin-left: 160px; font-size: 20px;"><i class="bi bi-cart-plus"></i>加入購物車</button>
+              <button type="button" class="btn btn-danger p-2" style="font-size: 20px;"><i class="bi bi-suit-heart-fill"></i>加入收藏</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/6.jpeg" class="card-img-top m-auto" style="width: 423px;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">SUKI韓式小雞麵</h5>
+              <p class="card-text text-center">回味十足，看劇小食，色澤金黃</p>
+              <p class="card-text text-center text-danger" style="font-size: 20px;">$100</p>
+              <button type="button" class="btn btn-danger p-2" style="margin-left: 160px; font-size: 20px;"><i class="bi bi-cart-plus"></i>加入購物車</button>
+              <button type="button" class="btn btn-danger p-2" style="font-size: 20px;"><i class="bi bi-suit-heart-fill"></i>加入收藏</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/7.jpg" class="card-img-top m-auto" style="width: 319px;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">純棉羅紋修身短版長袖針織衫-丁香紫</h5>
+              <p class="card-text text-center">輕鬆易打理免燙不易皺，休閒舒適秋冬必備保暖單品，高品質纖維填充舒適保暖</p>
+              <p class="card-text text-center text-danger" style="font-size: 20px;">$850</p>
+              <button type="button" class="btn btn-danger p-2" style="margin-left: 160px; font-size: 20px;"><i class="bi bi-cart-plus"></i>加入購物車</button>
+              <button type="button" class="btn btn-danger p-2" style="font-size: 20px;"><i class="bi bi-suit-heart-fill"></i>加入收藏</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <nav aria-label="Page navigation example ">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item"><a class="page-link" href="#">...</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <footer class="navbar-dark bg-dark py-2">
+    <div class="container d-flex justify-content-center">    
+      <ol class="text-white text-center" style="font-size: 50px;"><i class="bi bi-twitter"></i></ol>
+      <ol class="text-white text-center" style="font-size: 50px;"><i class="bi bi-browser-chrome"></i></ol>
+      <ol class="text-white text-center" style="font-size: 50px;"><i class="bi bi-envelope"></i></ol>
+    </div>
+  </footer>
+
+</body>
+</html>
